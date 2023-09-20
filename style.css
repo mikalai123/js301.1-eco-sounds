@@ -2,36 +2,55 @@
     margin: 0;
     padding: 0;
 }
+
 body {
     background-color: aqua;
 }
+
 .header {
     background-color: black;
 }
+
 .header-wrap {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
+
 .nav {
     margin-right: 20px;
 }
+
 .nav-list {
     display: inline-flex;
     color: white;
 }
+
 .logo {
     margin-left: 20px;
     cursor: pointer;
 }
+
 .list {
     font-size: 30px;
     list-style-type: none;
     margin-left: 25px;
     cursor: pointer;
 }
+
 .list:hover {
     color: rgb(189, 218, 73);
 }
 
+body {
+    background: url("assets/img/drozd.jpg") center center no-repeat fixed;
+    background-size: cover;
+}
+
+.play {
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    cursor: pointer;
+}
