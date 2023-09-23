@@ -95,7 +95,7 @@ for (let index = 0; index < lists.length; index++) {
         console.log(btn);
         if (btn == list1) {
             if (!isPlay) {
-                btnPlay.style.transform = "rotate("+ 72 + "deg)";
+                btnPlay.style.transform = "rotate(" + 72 + "deg)";
                 audioPlay1();
                 current = audoi1;
                 console.log(current);
@@ -104,7 +104,7 @@ for (let index = 0; index < lists.length; index++) {
             }
         } else if (btn == list2) {
             if (!isPlay) {
-                btnPlay.style.transform = "rotate("+ 144 + "deg)";
+                btnPlay.style.transform = "rotate(" + 144 + "deg)";
                 audioPlay2();
                 current = audoi2;
                 console.log(current);
@@ -113,7 +113,7 @@ for (let index = 0; index < lists.length; index++) {
             }
         } else if (btn == list3) {
             if (!isPlay) {
-                btnPlay.style.transform = "rotate("+ 216 + "deg)";
+                btnPlay.style.transform = "rotate(" + 216 + "deg)";
                 audioPlay3();
                 current = audoi3;
             } else {
@@ -121,7 +121,7 @@ for (let index = 0; index < lists.length; index++) {
             }
         } else if (btn == list4) {
             if (!isPlay) {
-                btnPlay.style.transform = "rotate("+ 288 + "deg)";
+                btnPlay.style.transform = "rotate(" + 288 + "deg)";
                 audioPlay4();
                 current = audoi4;
             } else {
@@ -129,7 +129,7 @@ for (let index = 0; index < lists.length; index++) {
             }
         } else if (btn == list5) {
             if (!isPlay) {
-                btnPlay.style.transform = "rotate("+ 360 + "deg)";
+                btnPlay.style.transform = "rotate(" + 360 + "deg)";
                 audioPlay5();
                 current = audoi5;
             } else {
@@ -144,7 +144,7 @@ for (let index = 0; index < lists.length; index++) {
 }
 
 let logo = document.querySelector(".logo-img");
-logo.addEventListener("click", function() {
+logo.addEventListener("click", function () {
     logo.classList.add("open");
     list1.classList.remove("open");
     list2.classList.remove("open");
@@ -166,34 +166,25 @@ logo.addEventListener("click", function() {
 for (let index = 0; index < lists.length; index++) {
     const element = lists[index];
     let logo = document.querySelector(".logo-img");
-    
 
-    // console.log(element);
-    // element.addEventListener("click", function() {
-    //     // console.log(element);
-    //     // element.classList.add("open");
-    //     if (event.target element[0]) {
-    //         element[0].classList.add("open");
-    //     }
-    // })
-    lists[0].addEventListener("click", function() {
+    lists[0].addEventListener("click", function () {
         logo.classList.remove("open");
         element.classList.remove("open");
         lists[0].classList.add("open");
     })
-    lists[1].addEventListener("click", function() {
+    lists[1].addEventListener("click", function () {
         element.classList.remove("open");
         lists[1].classList.add("open");
     })
-    lists[2].addEventListener("click", function() {
+    lists[2].addEventListener("click", function () {
         element.classList.remove("open");
         lists[2].classList.add("open");
     })
-    lists[3].addEventListener("click", function() {
+    lists[3].addEventListener("click", function () {
         element.classList.remove("open");
         lists[3].classList.add("open");
     })
-    lists[4].addEventListener("click", function() {
+    lists[4].addEventListener("click", function () {
         element.classList.remove("open");
         lists[4].classList.add("open");
     })
