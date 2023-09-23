@@ -44,13 +44,83 @@ body {
 }
 
 body {
-    background: url("assets/img/drozd.jpg") center center no-repeat fixed;
-    background-size: cover;
+    background: url("assets/img/forest.jpg");
 }
 
 .play {
     left: 50%;
     top: 50%;
+    margin-left: -75px;
+    margin-top: -75px;
     position: absolute;
     cursor: pointer;
+}
+.footer {
+    background: black;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+}
+.footer-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-info {
+    color: white;
+    font-size: 30px;
+    margin-left: 40px;
+}
+/* .rss {
+    width: 50%;
+} */
+.rss1 {
+    display: flex;
+    width: 135px;
+    height: 60px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(assets/svg/rss.svg);
+    margin-right: 40px;
+}
+.github {
+    color: white;
+}
+.btn {
+    width: 150px;
+    height: 150px;
+    background-size: 150px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-image: url(assets/svg/play.svg);
+    border: 0;
+    transition: 0.5s;
+}
+.active {
+    background-image: url(assets/svg/pause.svg);
+}
+.btn:hover {
+    filter: brightness(.85);
+}
+.logo-img:hover {
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+}
+.open {
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
+}
+.list:active {
+    color: red;
+}
+
+.list.open {
+    color: rgb(143, 173, 22);
+}
+
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+
+.logo{
+  animation: spin 5s linear 0s infinite;
 }
