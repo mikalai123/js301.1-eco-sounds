@@ -1,4 +1,4 @@
-console.log("ПРивет!");
+console.log("Привет!");
 
 const list1 = document.querySelector(".list1");
 const list2 = document.querySelector(".list2");
