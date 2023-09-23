@@ -142,3 +142,59 @@ for (let index = 0; index < lists.length; index++) {
         // console.log(isPlay);
     })
 }
+
+let logo = document.querySelector(".logo-img");
+logo.addEventListener("click", function() {
+    logo.classList.add("open");
+    list1.classList.remove("open");
+    list2.classList.remove("open");
+    list3.classList.remove("open");
+    list4.classList.remove("open");
+    list5.classList.remove("open");
+    let audio = current;
+    audio.pause();
+    // console.log("Logo");
+    logo = audio0;
+    logo.play();
+    console.log(logo);
+    btnPlay.classList.add("active");
+    isPlay = true;
+    photo.style.background = "url('assets/img/forest.jpg')";
+    current = logo;
+})
+
+for (let index = 0; index < lists.length; index++) {
+    const element = lists[index];
+    let logo = document.querySelector(".logo-img");
+    
+
+    // console.log(element);
+    // element.addEventListener("click", function() {
+    //     // console.log(element);
+    //     // element.classList.add("open");
+    //     if (event.target element[0]) {
+    //         element[0].classList.add("open");
+    //     }
+    // })
+    lists[0].addEventListener("click", function() {
+        logo.classList.remove("open");
+        element.classList.remove("open");
+        lists[0].classList.add("open");
+    })
+    lists[1].addEventListener("click", function() {
+        element.classList.remove("open");
+        lists[1].classList.add("open");
+    })
+    lists[2].addEventListener("click", function() {
+        element.classList.remove("open");
+        lists[2].classList.add("open");
+    })
+    lists[3].addEventListener("click", function() {
+        element.classList.remove("open");
+        lists[3].classList.add("open");
+    })
+    lists[4].addEventListener("click", function() {
+        element.classList.remove("open");
+        lists[4].classList.add("open");
+    })
+}
